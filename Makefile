@@ -1,11 +1,11 @@
-NAME = context.elementum
+NAME = context.da_inc
 GIT = git
 GIT_VERSION = $(shell $(GIT) describe --abbrev=0 --tags)
-GIT_USER = elgatito
-GIT_REPOSITORY = context.elementum
+GIT_USER = Two Face And Mr j
+GIT_REPOSITORY = context.da_inc
 TAG_VERSION = $(subst v,,$(GIT_VERSION))
 LAST_COMMIT = $(shell $(GIT) log -1 --pretty=\%B)
-VERSION = $(shell sed -ne "s/.*version=\"\([0-9a-z\.\-]*\)\" provider-name=\"elgatito\".*/\1/p" addon.xml)
+VERSION = $(shell sed -ne "s/.*version=\"\([0-9a-z\.\-]*\)\" provider-name=\"Two Face And Mr j\".*/\1/p" addon.xml)
 ZIP_SUFFIX = zip
 ZIP_FILE = $(NAME)-$(VERSION).$(ZIP_SUFFIX)
 
